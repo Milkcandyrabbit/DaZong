@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dazong_Index</title>
+    <style>
+        .index { max-width: 100%; width: 100%; margin: auto; padding: 0%; cursor: url(../img/datung_mouse.png),pointer;}
+        .video { width: 100%; max-height: 1000px; height: 100%;}
+        .video video { position: absolute; width: 100%; height: 100%; top:0; left:0; object-fit: cover;}
+        .main { z-index: 1; background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(2rem); position: fixed; top: 0; left: 0; max-height: 1000px; height: 100%; width: 100%; margin: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: "微軟正黑體";}
+        .menu { display: flex; margin: 20px auto; align-items: center; justify-content: center;}
+        .menu .logo { display: inline-block; margin: 0 120px; position: relative;}
+        .menu .logo img { display: inline-block;}
+        .logo::after { content: ""; height: 241px; width: 241px; position: absolute; background: url(../img/datung_logo_02.png) no-repeat center; left: 51.5%; top: -66px; margin-left: -121px; z-index: 4; transition: 0.5s ease-in-out; /*animation:rotate-taichi 25s ease-in;*/}
+        .logo:hover::after { transform: rotate(-45deg); transition: 0.5s ease-in-out;}
+        .menu a { color: #494949; font-weight: bold; font-size: 25px; text-decoration: none; letter-spacing: 1px; cursor: url(../img/datung_mouse_02.png),pointer;}
+        .menu b { position: relative;}
+        .menu b::before { content: url(../img/datung_left.png); opacity: 0; width: 0; left: 50%; top: -10px; position: absolute; transition: 0.5s ease-in-out;}
+        .menu b::after { content: url(../img/datung_right.png); opacity: 0; width: 0; right: 50%; bottom: -10px;  position: absolute; transition: 0.5s ease-in-out;}
+        .menu b:hover::before { width: 19px; left: -14px; opacity: 1.0; transition: 0.5s ease-in-out;}
+        .menu b:hover::after { width: 19px; right: -14px; opacity: 1.0; transition: 0.5s ease-in-out;}
+        .text {  display: block; color: #474747; text-align: center; margin: 20px auto; font-size: 18px;}
+
+        @keyframes rotate-taichi { 0%{transform:rotate(0deg);} 100%{transform:rotate(-720deg);}}
+    </style>
+</head>
+<body>
+    <div class="index">
+        <div class="video">
+            <video autoplay muted loop> <source src="../img/playgame.mp4" type="video/mp4"> </video>
+            <div class="main">
+            <div class="menu">
+                <a href="about.html"><b>I‵ma Da宗</b></a>
+                <a href="Index.html"><div class="logo"><img alt="" src="../img/datung_logo_01.png"></div></a>
+                <a href="https://www.flickr.com/photos/119216516@N08/albums"><b>鏡頭它說</b></a>
+            </div>
+            <div class="text">
+                <p>鏡頭，</p>
+                <p>是我表達自我的渠道。</p>
+                <p>他能讓我展現這世界在我眼中的模樣，</p>
+                <p>也能讓我將這世界的美好傳達出去。</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
